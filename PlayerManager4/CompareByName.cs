@@ -11,5 +11,11 @@ namespace PlayerManager4
         {
             this._ascending = ascending;
         }
+        
+        public int Compare(Player x, Player y)
+        {
+            return _ascending ? string.Compare(x.Name, y.Name, StringComparison.Ordinal) : 
+                string.Compare(y.Name, x.Name, StringComparison.Ordinal);
+        }
     }
 }
