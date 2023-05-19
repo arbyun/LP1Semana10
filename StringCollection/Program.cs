@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace StringCollection
 {
@@ -6,7 +7,12 @@ namespace StringCollection
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Creating the generic collections
+            List<string> list = new List<string>();
+            Stack<string> stack = new Stack<string>();
+            Queue<string> queue = new Queue<string>();
+            HashSet<string> hashSet = new HashSet<string>();
+
         }
     }
 }
