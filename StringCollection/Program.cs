@@ -32,8 +32,31 @@ namespace StringCollection
             hashSet.Add("string3");
             hashSet.Add("string4");
             hashSet.Add("string5");
+            
+            // Printing the strings in each collection
+            Console.WriteLine("List:");
+            foreach (string item in list)
+            {
+                Console.WriteLine(item);
+            }
 
+            Console.WriteLine("Stack:");
+            foreach (string item in stack)
+            {
+                Console.WriteLine(item);
+            }
 
+            Console.WriteLine("Queue:");
+            foreach (string item in queue)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("HashSet:");
+            foreach (string item in hashSet)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
