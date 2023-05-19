@@ -19,7 +19,7 @@ namespace PlayerManager3
             if (ReferenceEquals(null, other)) return 1;
             var nameComparison = string.Compare(Name, other.Name, StringComparison.Ordinal);
             if (nameComparison != 0) return nameComparison;
-            return Score.CompareTo(other.Score);
+            return other.Score.CompareTo(Score);
         }
     }
 }
