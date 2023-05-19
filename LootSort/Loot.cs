@@ -21,6 +21,16 @@ namespace LootSort
         public override int GetHashCode() =>
             HashCode.Combine(Kind, Description, Value);
         
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            Loot other = (Loot)obj;
+            return Kind == other.Kind && Description == other.Description && Value == other.Value;
+        }
         
         public int CompareTo(Loot other)
         {
