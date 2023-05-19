@@ -18,6 +18,10 @@ namespace LootSort
         public override string ToString() =>
             $"[{Kind,15}]\t{Value:f2}\t{Description}";
         
+        public override int GetHashCode() =>
+            HashCode.Combine(Kind, Description, Value);
+        
+        
         public int CompareTo(Loot other)
         {
             int typeComparison = String.Compare(Kind.ToString(), other.Kind.ToString(), StringComparison.Ordinal);
